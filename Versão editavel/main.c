@@ -57,7 +57,7 @@ void main ( )
                     {
                       puts("Qual o numero de de coluna");
                         scanf("%s",&coluna);
-                        lin = atoi(coluna);
+                        col = atoi(coluna);
                         info.totalC = col; // inserir o  total de colunas ;
 
                     }while (col<=0);
