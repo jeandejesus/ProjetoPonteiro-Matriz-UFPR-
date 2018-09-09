@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1536507018 source:/home/jean/Documentos/UFPR/ESTRUTURA DE DADOS/Trabalho/Ponteiro de Matriz/main.c
+	<stdio.h>
+	<stdlib.h>
+
