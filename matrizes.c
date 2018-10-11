@@ -89,7 +89,7 @@ int main ()
                 scanf("%s", nome);
                 Lista3.MD = busca_lista(Lista,nome);
                 if(Lista3.MD.totalL != NULL){
-                  Transposta(&Lista3,Lista3.MD.M, Lista3.MD.totalL, Lista3.MD.totalC,nome);
+                  Transposta(&Lista,Lista->MD.M, Lista->MD.totalL, Lista->MD.totalC,nome);
                 }
 
               break;
@@ -426,7 +426,7 @@ void operacao (ListaLinear **li, ListaLinear *l,char op)
     scanf("%s",info.nome_matriz );
     // se operação for de soma ou subtração
     if(op == '+' || op =='-'){
-      if(m2.MD.totalL == m1.MD.totalL && m2.MD.totalC == m1.MD.totalC) // verifica se o tamanho das matrizes são iguais
+      if( (m2.MD.totalL == m1.MD.totalL) && (m2.MD.totalC == m1.MD.totalC)) // verifica se o tamanho das matrizes são iguais
       {
           do
           {
@@ -517,7 +517,7 @@ void operacao (ListaLinear **li, ListaLinear *l,char op)
       } // Se a operação for uma divisão
     }else if (op == '/'){
       int valida = 0; // Variavel utilizada para controle e validação da divisão (0=false, 1=true)
-          if(m2.MD.totalL == m1.MD.totalL && m2.MD.totalC == m1.MD.totalC) // verifica se os tamanhos das matrizes são iguais
+          if((m2.MD.totalL == m1.MD.totalL) && (m2.MD.totalC == m1.MD.totalC)) // verifica se os tamanhos das matrizes são iguais
           {   do
             {
                 lin = m2.MD.totalL;
